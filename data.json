@@ -1,0 +1,48 @@
+{
+	"stories" : [
+		{
+			"id" : "story1", 
+			"idNumber" : "1",
+			"title" : "yosemite" , 
+			"imageURL" : "images/n1.png",
+			"profileURL" : "images/profile1.jpg",
+			"comment" : "This is so cool!"
+		}, 
+		{
+			"id" : "story2", 
+			"idNumber" : "2",
+			"title" : "skiing" , 
+			"imageURL" : "images/n2.png",
+			"profileURL" : "images/profile2.jpg"
+		},
+		{
+			"id" : "story3", 
+			"idNumber" : "3",
+			"title" : "new years eve" , 
+			"imageURL" : "images/n3.png",
+			"profileURL" : "images/profile3.jpg"
+		}, 
+		{
+			"id" : "story4", 
+			"idNumber" : "4",
+			"title" : "yosemite" , 
+			"imageURL" : "images/n4.jpg",
+			"profileURL" : "images/profile4.jpg"
+		},
+		{
+			"id" : "story5", 
+			"idNumber" : "5",
+			"title" : "Blah" , 
+			"imageURL" : "images/n1.png",
+			"profileURL" : "images/profile1.jpg"
+		}, 
+		{
+			"id" : "story6", 
+			"idNumber" : "6",
+			"title" : "Blah" , 
+			"imageURL" : "images/n2.png",
+			"profileURL" : "images/profile2.jpg"
+		}
+
+	]
+}

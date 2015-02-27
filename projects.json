@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"title": "Waiting in Line",
+		"date": "January 9",
+		"summary": "<p>Who doesn't like puppies? Let's see some cutest creatures with their appetite for food.</p>",
+		"image": "images/dog-2.jpg",
+		"description1":"Our dog's name is Kenny, and he often likes to sneak up upon the dinner table for treats. I caught his act one day with camera, and he does not even look guilty. At the end I have to give up the whole plate of cookies for Kenny because his look is just irresistable.",
+		"image2": "images/dog-1.jpg",
+		"description2": "Nana is recently adopted from the rescue center. We are very happy to have her with us, she is so loving and kind. Food is never a problem, Nana loves to eat all kinds of treats. We are trying to control her diet because she cannot stop eating once found food. Her favorite are cupcakes, of course, always freshly made by the family."
+	},
+	{
+		"id": 2,
+		"title": "Needfinding",
+		"date": "January 16",
+		"summary": "<p>As Yogi Berra said, you can observe a lot just by watching. Watching how people do things is a great way to learn their goals and values, and come up with design insight. We call this <b>needfinding</b>. This assignment helps you train your eyes and ears to come up with design ideas. Your goal is to uncover user needs, breakdowns, clever hacks, and opportunities for improvement.</p>",
+		"image": "images/comic2.jpg",
+		"description1":"<p>As always, calling San Diego Comic-Con <b>busy</b> is the most ridiculous understatement imaginable. Over the show's four days (five, if you include Preview Night), we were treated to an incredible amount of info on <b>comic books, games, movies and TV shows</b>. However, the thing you canNOT miss out on are the amazing <b>cosplayers</b> walking around.</p>",
+		"image2": "images/comic3.jpg",
+		"description2": "Princess Leia and Chewbacca from Star Wars take a stroll down San Diego's 5th Avenue. Picture: GETTY IMAGES."
+	}
+]

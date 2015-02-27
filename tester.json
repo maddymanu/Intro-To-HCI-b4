@@ -1,0 +1,90 @@
+{
+    "stories": [
+        {
+            "title": "Norway",
+            "imageURL": "images/n1.png",
+            "profileURL": "images/profile1.jpg",
+            "img0": "images/norway1.jpg",
+            "img1": "images/norway2.jpg",
+            "img2": "images/norway3.jpg",
+            "des1": "DAY 1: Had an awesome first day exploring the Geirangerfjord. Took this glamour shot from the hillside next to our cabin",
+            "des2": "DAY 2: We went down to a nearby lake, this foggy morning. The original plan was to go fishing, but the lake didn't show much activity so we decided to just have lunch there.",
+            "des3": "DAY 3: The perfect ending to the weekend. We got to see an aurora for the first time ever"
+        },
+        {
+            "title": "Amazon",
+            "imgURL": "images/n2.png",
+            "profileURL": "images/profile2.jpg",
+            "img0": "images/amazon1.jpg",
+            "img1": "images/amazon2.jpg",
+            "img2": "images/amazon3.jpg",
+            "des1": "The journey through the Amazon river started on this beautiful Saturday morning",
+            "des2": "After about 3 hours of paddling we get a well deserved break in front of this magnificent rainbow",
+            "des3": "As the afternoon came, we decided to get out of our boats and do some exploring on land. There we encountered this little fellow."
+        },
+        {
+            "title": "Mountain",
+            "imgURL": "images/m8.png",
+            "profileURL": "images/profile3.jpg",
+            "img0": "images/m8.png",
+            "img1": "images/m9.png",
+            "img2": "images/m10.jpg",
+            "des1": "Snowboarding dow the mountain",
+            "des2": "View of the peak of the mountain",
+            "des3": "Sunset "
+        },
+        {
+            "title": "Graveyard",
+            "imageURL": "images/n3.png",
+            "profileURL": "images/profile4.jpg",
+            "img0": "images/n3.png",
+            "img1": "images/m6.png",
+            "img2": "images/m7.png",
+            "des1": "Good start to the night with this surreal moonrise",
+            "des2": "This statue is staring right at us and it's creepy. However, we went to sleep next to it anyway.",
+            "des3": "We never woke up again."
+        }
+    ],
+    "users": [
+        {
+            "username": "Julian",
+            "password": "1234"
+        },
+        {
+            "username": "sylvia",
+            "password": "2345"
+        },
+        {
+            "username": "Aditya",
+            "password": "3456"
+        },
+        {
+            "username": "Aditya",
+            "password": "3456"
+        },
+        {
+            "username": "mew",
+            "password": "new"
+        },
+        {
+            "username": "mew",
+            "password": "new"
+        },
+        {
+            "username": "lalala",
+            "password": "bababa"
+        },
+        {
+            "username": "lalala",
+            "password": "bababa"
+        },
+        {
+            "username": "Sylvia",
+            "password": "123456"
+        },
+        {
+            "username": "",
+            "password": ""
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Momentz</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">
+    
+</head>
+
+<body>
+<center>
+	<div class="story-title">
+			<button id="submitBtn"><img src="images/back_button.png" class = "img"></button>
+			<!-- LikeBtn.com BEGIN -->
+		<span class="likebtn-wrapper" data-theme="disk" style='float:right'></span>
+		<script>(function(d,e,s){a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+		<!-- LikeBtn.com END -->
+			<p>{{title}}</p>		
+	</div>
+
+	<div class="container-story">
+	<hr>
+		<div id="toRight">
+			<a href = "javascript:void(0)" onclick = "document.getElementById('0').style.display='block';document.getElementById('fade').style.display='block'">
+			<img src="{{img0}}" class="img-responsive, img-rounded" alt="Responsive image" id="img">
+			</a>
+			<div id="0" class="white_content"> <img src="{{img0}}" class="img-responsive", "img-rounded" alt="Responsive image" id="imgEnlarge"> <a href = "javascript:void(0)" onclick = "document.getElementById('0').style.display='none';document.getElementById('fade').style.display='none'">Close</a></div>
+		    <div id="fade" class="black_overlay"></div>
+			
+			<p><font color="000000">{{des1}}</font></p>
+		</div>
+	<hr>
+		<div id="toLeft">
+			<a href = "javascript:void(0)" onclick = "document.getElementById('1').style.display='block';document.getElementById('fade').style.display='block'">
+			<img src="{{img1}}" class="img-responsive, img-rounded" alt="Responsive image" id="img">
+			</a>
+			<div id="1" class="white_content"> <img src="{{img1}}" class="img-responsive" alt="Responsive image" id="imgEnlarge"> <a href = "javascript:void(0)" onclick = "document.getElementById('1').style.display='none';document.getElementById('fade').style.display='none'">Close</a></div>
+			<div id="fade" class="black_overlay"></div>
+			
+			<p><font color="000000">{{des2}}</font></p>
+		</div>
+	<hr>
+		<div id="toRight">
+			<a href = "javascript:void(0)" onclick = "document.getElementById('2').style.display='block';document.getElementById('fade').style.display='block'">
+			<img src="{{img2}}" class="img-responsive, img-rounded" alt="Responsive image" id="img">
+			</a>
+			<div id="2" class="white_content"> <img src="{{img2}}" class="img-responsive" alt="Responsive image" id="imgEnlarge"> <a href = "javascript:void(0)" onclick = "document.getElementById('2').style.display='none';document.getElementById('fade').style.display='none'">Close</a></div>
+			<div id="fade" class="black_overlay"></div>
+			
+			<p><font color="000000">{{des3}}</font></p>
+		</div>
+	<hr>
+	</div>
+		</center>
+<center>
+    <ul id="menu">
+		<li id="TopS"><div><img src="images/top.png" id="img"></div><div><a href="#">Top</a></div></li>
+		<li id="NewsFeed"><div><img src="images/newsfeed.png" id="img"></div><div><a href="#">Newsfeed</a></div></li>
+		<li id="Publish"><div><img src="images/publish.png" id="img"></div><div><a href="#">Publish</a></div></li>
+		<li id="Profile"><div><img src="images/profile.png" id="img"></div><div><a href="#">Profile</a></div></li>
+	</ul>
+</center>
+
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+</body>
+</html>

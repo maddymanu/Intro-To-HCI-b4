@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Momentz - News Feed</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">
+    
+</head>
+
+<body>
+<center>
+	
+	
+	<div class="bg-header">
+		<p>News Feed</p>		
+	</div>
+
+	<div class="container">
+
+		{{#each stories}}
+			<form id="viewStory" role="form" method="get" action="/story">
+			<div id="{{id}}">
+			<div style='float: left'>
+				<img src="{{profileURL}}" class="img-circle" align="left" width="50" height="50" />
+				<div style='padding:10px 0px 0px 140px'><p class="name" align="left">{{title}}</p></div>
+			</div>
+			<input type="image" src="{{img0}}" name="imageN" width="375" class="img-responsive" style="padding-top:10px">
+			<!-- </a> -->
+			<div class="details"></div>
+			</div>
+			<hr>
+
+			<input type="hidden" name="title" value={{title}}>
+			
+			<a href="#" id="story"></a>
+
+			</form>
+		{{/each}}
+	</div>
+
+    <ul id="menu">
+		<li id="TopS"><div><img src="images/top.png" id="img"></div><div><a href="#">Top</a></div></li>
+		<li id="NewsFeed"><div><img src="images/newsfeed2.png" id="img"></div><div><a href="#" style="color:#40FF00">Newsfeed</a></div></li>
+		<li id="Publish"><div><img src="images/publish.png" id="img"></div><div><a href="#">Publish</a></div></li>
+		<li id="Profile"><div><img src="images/profile.png" id="img"></div><div><a href="#">Profile</a></div></li>
+	</ul>
+
+	
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+	</center>
+</body>
+</html>

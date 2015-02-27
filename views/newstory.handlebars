@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Momentz - Publish a Story!</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">
+    
+</head>
+
+<body>
+	<!-- <div class="container"> -->
+		
+		<center>
+		<div class="bg-header">
+			<!-- <h1>Momentz</h1> -->
+			<p>Publish a Story!</p>			
+		</div>
+		</center>
+
+
+
+<center>
+	<div class="container">
+	  <div class="pscenter">
+		<div class="midboxes">
+		<form id="addFriendForm" role="form" method="get" action="/add">
+			<form id = "uploadForm" enctype = "multipart/form-data" action = "/api/photo">
+			<label for="description">Story Title:</label>
+		<input type='text' id="titleB" name="titleB" placeholder="One word"/>
+		 <input type='file' id="imgInp" name="images" multiple/>
+		 
+			<div class="row">
+				  <div class="col-sm-2">
+				   
+				    <img id="blah" name="img1" src="" alt="" width="124" height="124" />
+				    <textarea name="txt1" id="txt1" placeholder="2-3 sentences."></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				  <div class="col-sm-2">
+	
+				    <img id="blah2" src="" alt="" width="124" height="124" />
+				    <textarea name="txt2" id="txt2" placeholder="2-3 sentences."></textarea>
+				  </div>
+			  <!-- <div class="col-sm-5">Text Box</div> -->
+			</div>
+
+			<div class="row">
+			  <div class="col-sm-2">
+			    <img id="blah3" src="" alt="" width="124" height="124" />
+			    <textarea name="txt3" id="txt3" placeholder="2-3 sentences."></textarea>
+			  </div>
+			</div>
+
+			<div class="row">
+			  <div class="col-sm-2">
+			    <a href="#" id="published"><input type='submit' id="submitstory" /></a>
+			  </div>
+			</div>
+			</form>
+			</form>
+			
+	  </div>
+	</div>
+</div>
+</center>
+
+
+		  
+<ul id="menu">
+	<li id="TopS"><div><img src="images/top.png" id="img"></div><div><a href="#">Top</a></div></li>
+		<li id="NewsFeed"><div><img src="images/newsfeed.png" id="img"></div><div><a href="#">Newsfeed</a></div></li>
+		<li id="Publish"><div><img src="images/publish2.png" id="img"></div><div><a href="#"style="color:#40FF00">Publish</a></div></li>
+		<li id="Profile"><div><img src="images/profile.png" id="img"></div><div><a href="#">Profile</a></div></li>
+</ul>
+		
+	<!-- </div> -->
+	
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+</body>
+</html>

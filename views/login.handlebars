@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Momentz</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">
+    
+</head>
+
+<body>
+<div id="bodywrapper">
+<center>
+	
+	<div class="bg-header" style="background-color:#0B4C5F">
+		<p>Top Stories</p>			
+	</div>
+	<div class="thumbnail-2">
+	<div id="intro-top">
+		<div><img src="images/quote_left.png" id="img" align="left" class="img-responsive" width="20"></div>
+		<div style="padding-top:30px"><p>Here is your daily dose of the most popular stories among users! <b>Happy Momentz!</b></p></div>
+		<img src="images/quote_right.png" id="img" align="right" class="img-responsive" width="20">
+		<p align="right" id="admin-message" style="color:black">your Momentz admins</p>
+	</div>
+	</div>
+
+	<div id="top-container">
+
+		{{#each projects}}
+		<div class="project" id="{{id}}">
+			<div class="thumbnail">
+				<!-- LikeBtn.com BEGIN -->
+		<span class="like-count" style="float:right">{{like}} likes</span>
+					<img src="{{profileURL}}" class="img-circle" align="left" width="40" height="40" />
+					<div style='padding:10px 0px 0px 50px'><p class="name" align="left">{{user}}</p></div>
+					<div class="inner-thumbnail">
+					<div style='padding-top:10px'><p class="title" style='font-style: italic'>{{name}}</p></div>
+					<img src="{{image}}" alt="Lorem Pixel image" class="img-rounded img-responsive" id="img"/>
+					<div class="details"></div>
+				</div>				
+			</div>
+		</div>
+		{{/each}}
+	</div>
+</center>
+
+
+<!-- menu -->
+    <ul id="menu">
+		<li id="TopS"><div><img src="images/top2.png" id="img"></div><div><a href="#" style="color:#40FF00">Top</a></div></li>
+		<li id="NewsFeed"><div><img src="images/newsfeed.png" id="img"></div><div><a href="#">Newsfeed</a></div></li>
+		<li id="Publish"><div><img src="images/publish.png" id="img"></div><div><a href="#">Publish</a></div></li>
+		<li id="Profile"><div><img src="images/profile.png" id="img"></div><div><a href="#">Profile</a></div></li>
+	</ul>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+	
+</div>	
+</body>
+</html>
