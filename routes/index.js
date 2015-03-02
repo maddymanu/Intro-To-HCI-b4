@@ -15,6 +15,7 @@ var pass1 = document.forms["signupForm"]["password"].value;
 var isFilled=true;
 var msg="";
 //null check
+//syl up
 if(username == "") {
     msg+="You forgot the user name\n";
     isFilled=false;

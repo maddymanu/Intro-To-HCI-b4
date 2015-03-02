@@ -49,42 +49,6 @@
         {
             "username": "Julian",
             "password": "1234"
-        },
-        {
-            "username": "sylvia",
-            "password": "2345"
-        },
-        {
-            "username": "Aditya",
-            "password": "3456"
-        },
-        {
-            "username": "Aditya",
-            "password": "3456"
-        },
-        {
-            "username": "mew",
-            "password": "new"
-        },
-        {
-            "username": "mew",
-            "password": "new"
-        },
-        {
-            "username": "lalala",
-            "password": "bababa"
-        },
-        {
-            "username": "lalala",
-            "password": "bababa"
-        },
-        {
-            "username": "Sylvia",
-            "password": "123456"
-        },
-        {
-            "username": "",
-            "password": ""
         }
     ]
 }

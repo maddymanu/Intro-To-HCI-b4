@@ -31,7 +31,9 @@ exports.showS = function(req, res){
 		     console.log(data2['stories'][i]);
 
 		     res.render('story', data2['stories'][i]);
-		  }
+		  }else{
+			console.log("story title does not match");
+		}
 		}
 
 		 // console.log(data2['stories'][3]["title"]);

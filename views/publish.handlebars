@@ -28,8 +28,8 @@
 	<div class="container">
 	  <div class="pscenter">
 		<div class="midboxes">
-		<form id="addFriendForm" role="form" method="get" action="/add">
-			<form id = "uploadForm" enctype = "multipart/form-data" action = "/api/photo">
+		<!--<form id="addFriendForm" role="form" method="get" action="/add">-->
+			<form id = "uploadForm" enctype = "multipart/form-data" action = "/api/photo" method    = "post">
 			<label for="description">Story Title:</label>
 		<input type='text' id="titleB" name="titleB" placeholder="One word"/>
 		 <input type='file' id="imgInp" name="images" multiple/>
@@ -64,7 +64,7 @@
 			  </div>
 			</div>
 			</form>
-			</form>
+			<!--</form>-->
 			
 	  </div>
 	</div>
