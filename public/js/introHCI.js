@@ -7,6 +7,8 @@ $(document).ready(function() {
 })
 
 
+
+
 function readURL(input , id) {
 
     // if (input.files && input.files[0]) {
@@ -76,6 +78,8 @@ function initializePage() {
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
   // $("a.thumbnail").click(projectClick);
+  $(".a_version_top_story").click(function(){woopra.track("a_version_top_story");});
+    $(".a_version_news_feed").click(function(){woopra.track("a_version_news_feed");});
   $("#submitBtn").click(updateProject);
   $("#logoutBtn").click(logout);
   $("#registerBtn").click(goToRegister);

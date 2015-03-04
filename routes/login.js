@@ -1,7 +1,7 @@
 var data = require("../tester.json");
 
 exports.view = function(req, res){
-  res.render('login', {
+  	res.render('login', {
 	'projects': [
 		{ 	'name': 'The Cupcake Thieves: Insight on Food Patterns for Beagles',
 		    'image': 'images/dog-3.jpg',
@@ -19,4 +19,5 @@ exports.view = function(req, res){
 		}   	
 	]
   });
+
 };

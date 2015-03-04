@@ -124,8 +124,9 @@ app.post('/api/photo',function(req,res){
 			      console.log("JSON saved to " + outputFilename);
 			    }
 
-			    res.render('published', {title:title , img0: img0, img1: img1, img2: img2 , 
-		des1: des1 , des2: des2 , des3:des3});
+			    //res.render('published', {title:title , img0: img0, img1: img1, img2: img2 , 
+		//des1: des1 , des2: des2 , des3:des3});
+	    	res.redirect('/newsfeed');
 			});
 
 	});
