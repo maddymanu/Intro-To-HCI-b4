@@ -80,24 +80,24 @@ function initializePage() {
   // $("a.thumbnail").click(projectClick);
   $(".a_version_top_story").click(function(){woopra.track("a_version_top_story");});
     $(".a_version_news_feed").click(function(){woopra.track("a_version_news_feed");});
+  $("#Publish2").click(goToPublish2);
   $("#submitBtn").click(updateProject);
   $("#logoutBtn").click(logout);
   $("#registerBtn").click(goToRegister);
-  $('#likeBtn').click(like);
-  $('#commentBtn').click(addComment);
   $("#TopS").click(goToTopStories);
   $("#NewsFeed").click(goToNewsFeed);
   $("#Publish").click(goToPublish);
   $("#Profile").click(goToProfile);
   $("#story1").click(goToStory1);
   $("#story").click(goToStory);
+  $("#story1").click(goToStory1);
   $("#story2").click(goToStory2);
   $("#story3").click(goToStory3);
   $("#story4").click(goToStory4);
   $("#story5").click(goToStory5);
   $("#story6").click(goToStory6);
-  $("#newstory").click(goToNewStory);
   $("#published").click(goToPublished);
+  
 }
 /*
  * Make an AJAX call to retrieve project details and add it in
@@ -151,9 +151,15 @@ function comment(result) {
   $(".details").html(projectDescription);
 }
 function logout(e) {
+  console.log("Logout button clicked");
 	window.location='/';
 }
+function newStory(e) {
+  e.preventDefault();
+  window.location='/newStory';
+}
 function goToNewStory(e) {
+  e.preventDefault();
   console.log("newstory Link clicked!");
   window.location='/newstory';
 }
@@ -174,6 +180,10 @@ function goToNewsFeed(e) {
 
 function goToPublish(e) {
 	window.location='/publish';
+}
+function goToPublish2(e){
+  console.log("Publish2 clicked");
+  window.location='/publish2';
 }
 
 function goToProfile(e) {

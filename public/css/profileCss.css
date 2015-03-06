@@ -15,18 +15,28 @@
 }
 
 body {
-    /*background-image: url("../images/background_logo.png");*/
-    background-color: #FFFFFF;
+  /*background-image: url("../images/background_logo.png");*/
+  background-color:#E6E6E6;
 }
 
 html, body {
  height: 100%;
+ font-family: "Junction";
 }
 
 .container{
   padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   max-width: 500px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
+}
+
+.container #img{
+  max-width: 340px;
+  min-width: 300px;
+  border:12px solid #FFFFFF;
+  box-shadow: 2px 2px 2px #1B1B23;
 }
 
 #imageList {
@@ -50,26 +60,112 @@ html, body {
 #imageList a:hover {
     border-color: white;
 }
+
+div.fileinputs {
+  position: relative;
+}
+
+div.fakefile {
+  float: right;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+div.fakefile .img{
+  width: 30px;
+  height: 30px;
+}
+
+input.file {
+  position: relative;
+  text-align: right;
+  -moz-opacity:0 ;
+  filter:alpha(opacity: 0);
+  opacity: 0;
+  z-index: 2;
+}
+
+/* red header */
 .bg-header {
-  padding-left: 5px;
   padding-top: 5px;
-  padding-bottom: 1px; 
   background-color: #ff004a;
-}
-.bg-header p{
-color: #FFFFFF;
-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-weight: bold;
-font-size: 150%;
+  background: -webkit-linear-gradient(#334464, #00153D); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#334464, #00153D); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#334464, #00153D); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#006666, #003D3D); /* Standard syntax */
+
 }
 
-.profile-header{
-    padding-top: 20px;
-    padding-left: 20px;
+.c1{
+  color: black;
+    background-color: #E6E6E6;
+    moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    width: 325px;
+    height: 260px;
+    border: 12px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-shadow: 2px 2px 2px #1B1B23; 
 }
 
-.profile-header .img{
-    float:left;
+.c2{
+  border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 9.5px 50px;
+   -webkit-border-radius: 14px;
+   -moz-border-radius: 14px;
+   border-radius: 14px;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 17px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+#intro-top{
+  max-height: 310px;
+  background-image: url("../images/profile_bg.jpg");
+  background-size: 400px 300px;
+  filter: blur(20px);
+  font-style: italic;
+  font-size: 16px;
+  padding: 0px 20px 10px 30px;
+  color: white;
+}
+
+#intro-top #setting{
+
+}
+
+#intro-top #title{
+color: white;
+font-family: "Junction";
+font-size: 200%;
+}
+
+.icon{
+  padding: 0px 2px 0px 2px;
+  display: inline;
+}
+
+.profile-picture{
+  padding-top:50px;
+  height: 100%;
+}
+.profile-picture .img-circle{
+    border:2px solid #FFFFFF;
+}
+
+.profile-picture .profile-upload{
+  float: right;
 }
 
 /* navigation bar styling */

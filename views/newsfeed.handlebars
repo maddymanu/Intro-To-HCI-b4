@@ -12,11 +12,16 @@
 </head>
 
 <body>
+<div id="bodywrapper">
 <center>
 	
 	
 	<div class="bg-header">
-		<p>News Feed</p>		
+		<span class="logout" style="float:right">
+			<img src="images/logout.png" id="logoutBtn" width="30" height="30"/>
+		</span>	
+		<p>News Feed</p>
+			
 	</div>
 
 	<div class="container">
@@ -24,20 +29,15 @@
 		{{#each stories}}
 			<form id="viewStory" role="form" method="get" action="/story">
 			<div id="{{id}}">
-			<div style='float: left'>
-				<img src="{{profileURL}}" class="img-circle" align="left" width="50" height="50" />
-				<div style='padding:10px 0px 0px 140px'><p class="name" align="left">{{title}}</p></div>
-			</div>
+			<div class="thumbnail" style='float: left'>
+				<img src="{{profileURL}}" id="profile" class="img-circle" align="left" width="50" height="50" />
+				<div style='padding:10px 0px 0px 140px'><p class="title" align="left">{{title}}</p></div>
+			<div class="inner-thumbnail">
 			<input type="image" src="{{img0}}" name="imageN" width="375" class="img-responsive" style="padding-top:10px">
-			<!-- </a> -->
-			<div class="details"></div>
-			</div>
-			<hr>
-
 			<input type="hidden" name="title" value={{title}}>
-			
 			<a href="#" id="story"></a>
-
+			</div>
+			</div>
 			</form>
 		{{/each}}
 	</div>
@@ -55,5 +55,6 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/introHCI.js"></script>
 	</center>
+</div>
 </body>
 </html>

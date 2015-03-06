@@ -18,7 +18,8 @@ var story = require('./routes/story');
 var newsfeed = require('./routes/newsfeed');
 var publish = require('./routes/publish');
 var profile = require('./routes/profile');
-var newstory = require('./routes/newstory');
+var publish2 = require('./routes/publish2');
+//var newstory = require('./routes/newstory');
 var published = require('./routes/published');
 // Example route('./routes/story4');
 // var user = require('./routes/user');
@@ -70,7 +71,8 @@ app.get('/project/:id', project.projectInfo);
 app.get('/newsfeed', newsfeed.view);
 app.get('/publish', publish.view);
 app.get('/profile', profile.view);
-app.get('/newstory', newstory.view);
+app.get('/publish2', publish2.view);
+//app.get('/newstory', newstory.view);
 app.get('/published', published.view);
 
 app.get('/add', publish.addStory);
@@ -81,6 +83,43 @@ app.get('/',function(req,res){
       res.sendfile("publish.handlebars");
 });
 /*Handling routes.*/
+app.post('/api/profile',function(req,res){
+	if(done==true){
+		console.log(req.files);
+
+		var fs=require('fs');
+
+		var profile = req.files.images.path.substr('public/'.length);
+		var inFileName = "tester.json";
+		var outputFilename = "tester.json";
+
+		var data2;
+
+	fs.readFile(inFileName, 'utf8', function (err, data) {
+	    if (err) {
+	        console.log('Error: ' + err);
+	    }
+	 
+	    data2 = JSON.parse(data);
+	    console.dir(data2);
+	    console.log(data2["users"]["0"]["profile"]);
+
+		data2["users"]["0"]["profile"] = profile;
+
+	    	fs.writeFile(outputFilename, JSON.stringify(data2, null, 4), function(err) {
+			    if(err) {
+			      console.log(err);
+			    } else {
+			      console.log("JSON saved to " + outputFilename);
+			    }
+
+	    	res.redirect('/profile');
+			});
+
+	});
+	console.dir(data2);
+	}
+});
 
 app.post('/api/photo',function(req,res){
   if(done==true){
@@ -123,9 +162,6 @@ app.post('/api/photo',function(req,res){
 			    } else {
 			      console.log("JSON saved to " + outputFilename);
 			    }
-
-			    //res.render('published', {title:title , img0: img0, img1: img1, img2: img2 , 
-		//des1: des1 , des2: des2 , des3:des3});
 	    	res.redirect('/newsfeed');
 			});
 
